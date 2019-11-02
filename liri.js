@@ -10,8 +10,9 @@
 
 require("dotenv").config();
 
-var keys = require("js/keys.js");
+var keys = require("./js/keys.js");
 var Spotify = require('node-spotify-api'); //Using the Spotify api and getting the key from keys.js
+console.log(keys);
 var spotify = new Spotify(keys.spotify);
 
 var moment = require('moment'); //Both required to use moment for node
