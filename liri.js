@@ -1,29 +1,14 @@
-//* `concert-this`
-
-//* `spotify-this-song`
-
-//* `movie-this`
-
-//* `do-what-it-says`
-
-
-
 require("dotenv").config();
-
 var keys = require("./js/keys.js");
 var Spotify = require('node-spotify-api'); //Using the Spotify api and getting the key from keys.js
-console.log(keys);
 var spotify = new Spotify(keys.spotify);
-
 var moment = require('moment'); //Both required to use moment for node
 moment().format();
-
 var axios = require('axios'); //To get the information from the APIs for movie and concert-this
-
 var fs = require('fs'); //To read the random.txt file for the do-what-it-says function
-
 var command = process.argv[2]; //For the switch statement
 var value = process.argv[3]; //To send the song/movie/concert to their respective functions
+
 
 switch (command) {
     case "concert-this":
@@ -40,7 +25,7 @@ switch (command) {
         break;
 };
 
-function concertThis(value) {
+function concertThis() {
     axios.get("https://rest.bandsintown.com/artists/" + value + "/events?app_id=codingbootcamp")
         .then(function (response) {
             for (var i = 0; i < response.data.length; i++) {
@@ -63,7 +48,7 @@ function concertThis(value) {
 
 }
 
-function spotifySong(value) {
+function spotifySong() {
     if (!value) {
         value = "The Sign";
     }
@@ -89,7 +74,7 @@ function spotifySong(value) {
         });
 }
 
-function movieThis(value) {
+function movieThis() {
     if (!value) {
         value = "mr nobody";
     }
@@ -113,7 +98,7 @@ function movieThis(value) {
 
 }
 
-function doThis(value) {
+function doThis() {
 
     fs.readFile("random.txt", "utf8", function (error, data) {
         if (error) {
@@ -123,3 +108,4 @@ function doThis(value) {
         spotifySong(dataArr[0], dataArr[1]);
     })
 }
+
