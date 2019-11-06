@@ -28,11 +28,13 @@ Create a .env file in the same directory as the rest of the files. In the .env f
 liri Available functions:
 
 concert-this
+[!image]/Users/hannarafael/Desktop/BOOT-CAMP/HOMEWORK/LIRI-HOMEWORK/Screen-Shots/Concert-This.png
 
 spotify-this-song
+[!image]/Users/hannarafael/Desktop/BOOT-CAMP/HOMEWORK/LIRI-HOMEWORK/Screen-Shots/Spotify-This-Song.png
 
 movie-this
-
+[!Image]/Users/hannarafael/Desktop/BOOT-CAMP/HOMEWORK/LIRI-HOMEWORK/Screen-Shots/Movie-This.png
 do-what-it-says
 
 Running the following commands in your terminal will do the following:
