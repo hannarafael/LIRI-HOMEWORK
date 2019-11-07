@@ -27,15 +27,11 @@ Create a .env file in the same directory as the rest of the files. In the .env f
 
 liri Available functions:
 
-concert-this
-![image](https://imgur.com/IWm8BCk)
+![Movie-This](https://user-images.githubusercontent.com/49074642/68412619-8ea3b800-015a-11ea-8c37-a49a4ac78b57.png)
 
-spotify-this-song
-![image](/Users/hannarafael/Desktop/BOOT-CAMP/HOMEWORK/LIRI-HOMEWORK/Screen-Shots/Spotify-This-Song.png)
+![Spotify-This-Song](https://user-images.githubusercontent.com/49074642/68412632-919ea880-015a-11ea-9a4a-3ec2c1509e58.png)
 
-movie-this
-![Image](/Users/hannarafael/Desktop/BOOT-CAMP/HOMEWORK/LIRI-HOMEWORK/Screen-Shots/Movie-This.png)
-do-what-it-says
+![Concert-This](https://user-images.githubusercontent.com/49074642/68412634-93686c00-015a-11ea-8c24-a7d7f268d6c3.png)
 
 Running the following commands in your terminal will do the following:
 node liri.js concert-this 'concert or band name'
